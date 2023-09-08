@@ -1,0 +1,31 @@
+body {
+    background-color: aquamarine;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 1000px;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+#legend {
+    width: 400px;
+    border: 5px solid blue;
+    padding: 10px 20px 30px 40px;
+    margin: 50px;
+    /* box-sizing: border-box; */
+    border-radius: 50px;
+}
+
+.fio {
+    color: green;
+    /* display: inline; */
+}
+
+label {
+    display: block;
+}

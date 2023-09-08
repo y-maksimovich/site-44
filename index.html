@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой первый сайт</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="fio">Каграманян</h1>
+    <h2 class="fio">Юрий</h2>
+    <h3 class="fio">Максимович</h3>
+    <h6>Легенда</h6>
+    <span>Красавчик</span>
+    <p>Самый лучший преподаватель в школе актуальных профессий TEHNIKUM</p>
+    <img src="./photo.jpeg" alt="Легендарный ЮМ" id="legend">
+
+    <h2>Знание языков:</h2>
+    <ol start="3" id="languageList">
+        <li>русский</li>
+        <li>английский</li>
+        <li>узбекский</li>
+    </ol>
+
+    <h2>Формы</h2>
+    <form action="#">
+        <label>
+            Имя:
+            <input type="text" name="name" value="вася">
+        </label>
+        <label>
+            Пароль:
+            <input type="password" name="pass">
+        </label>
+        <label>
+            Возраст:
+            <input type="number" name="age" placeholder="Полный возраст">
+        </label>
+        <label>
+            <input type="checkbox" name="agreement">
+            Я согласен с условиями
+        </label>
+        Пол:
+        <label>
+            <input type="radio" name="gender" value="male">
+            М
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female">
+            Ж
+        </label>
+        Учился ли в Техникуме:
+        <label>
+            <input type="radio" name="TehnikumStudent" value="yes">
+            Да
+        </label>
+        <label>
+            <input type="radio" name="TehnikumStudent" value="no">
+            Нет
+        </label>
+        <input type="submit">
+    </form>
+
+    <h2>Отправка SMS</h2>
+    <form action="https://api.tehnikum.school/sms/sms.php" method="post">
+        <label>
+            Номер телефона:
+            <input type="tel" name="sms_phone">
+        </label>
+        <label>
+            Текст СМС:
+            <input type="text" name="sms_text">
+        </label>
+        <input type="hidden" name="token" value="Students:1234567">
+        <input type="submit" value="Отправить СМС">
+
+
+    </form>
+</body>
+</html>
